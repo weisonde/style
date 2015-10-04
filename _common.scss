@@ -1,0 +1,47 @@
+﻿@charset "utf-8";
+
+.flex{
+		display: -webkit-box; // Chrome 4+, Safari 3.1, iOS Safari 3.2+ 
+	    display: -moz-box; // Firefox 17- 
+	    display: -webkit-flex; // Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 
+	    display: -moz-flex; // Firefox 18+ 
+	    display: -ms-flexbox; // IE 10 
+	    display: flex; // Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ 
+	    /*
+		    CSS3 display:flex和display:box有什么区别？
+		    前者是flex 2012年的语法，也将是以后标准的语法，大部分浏览器已经实现了无前缀版本。
+			后者是2009年的语法，已经过时，是需要加上对应前缀的。
+
+		*/
+	}
+	.flex-cc{
+		box-pack:center; //android 4.4以下使用 水平居中
+		box-align:center;	//android 4.4 以下使用 垂直居中
+		justify-content:center; //子元素水平居中
+		align-items:center; //子元素垂直居中
+	}
+	.flex-rl{
+		-webkit-flex-direction: row-reverse;
+		-moz-flex-direction: row-reverse;
+		-ms-flex-direction: row-reverse;
+		-o-flex-direction: row-reverse;
+		flex-direction: row-reverse;
+		//flex-direction控制子元素为排列方向，默认为row,从左住右排 1 2 3
+		//reverse反向排列，从右住左排，即3 2 1
+	}
+	.flex-tb{
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+		//纵向布局
+	}
+	.flex-bt{
+		-webkit-flex-direction: column-reverse;
+		-moz-flex-direction: column-reverse;
+		-ms-flex-direction: column-reverse;
+		-o-flex-direction: column-reverse;
+		flex-direction: column-reverse;
+		//将内容变成纵向布局，且反向排列
+	}
