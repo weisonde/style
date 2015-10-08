@@ -2,24 +2,24 @@
 
 .flex{
 		display: -webkit-box; // Chrome 4+, Safari 3.1, iOS Safari 3.2+ 
-	    display: -moz-box; // Firefox 17- 
-	    display: -webkit-flex; // Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 
-	    display: -moz-flex; // Firefox 18+ 
-	    display: -ms-flexbox; // IE 10 
-	    display: flex; // Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ 
-	    /*
-		    CSS3 display:flex和display:box有什么区别？
-		    前者是flex 2012年的语法，也将是以后标准的语法，大部分浏览器已经实现了无前缀版本。
+		display: -moz-box; // Firefox 17- 
+		display: -webkit-flex; // Chrome 21+, Safari 6.1+, iOS Safari 7+, Opera 15/16 
+		display: -moz-flex; // Firefox 18+ 
+		display: -ms-flexbox; // IE 10 
+		display: flex; // Chrome 29+, Firefox 22+, IE 11+, Opera 12.1/17/18, Android 4.4+ 
+		/*
+			CSS3 display:flex和display:box有什么区别？
+			前者是flex 2012年的语法，也将是以后标准的语法，大部分浏览器已经实现了无前缀版本。
 			后者是2009年的语法，已经过时，是需要加上对应前缀的。
 
 		*/
 	}
 	&-item{
-		 -webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
-        -moz-box-flex: 1;         /* OLD - Firefox 19- */
-        -webkit-flex: 1;          /* Chrome */
-        -ms-flex: 1;              /* IE 10 */
-        flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+		-webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
+		-moz-box-flex: 1;         /* OLD - Firefox 19- */
+		-webkit-flex: 1;          /* Chrome */
+		-ms-flex: 1;              /* IE 10 */
+		flex: 1;                  /* NEW, Spec - Opera 12.1, Firefox 20+ */
 	}
 	&-cc{
 		box-pack:center; //android 4.4以下使用 水平居中
