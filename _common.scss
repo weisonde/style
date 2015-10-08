@@ -13,7 +13,6 @@
 			后者是2009年的语法，已经过时，是需要加上对应前缀的。
 
 		*/
-	}
 	&-item{
 		-webkit-box-flex: 1;      /* OLD - iOS 6-, Safari 3.1-6 */
 		-moz-box-flex: 1;         /* OLD - Firefox 19- */
@@ -52,3 +51,4 @@
 		flex-direction: column-reverse;
 		//将内容变成纵向布局，且反向排列
 	}
+}
